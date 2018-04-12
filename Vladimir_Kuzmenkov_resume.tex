@@ -57,6 +57,13 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+\newcommand{\skillsSubheading}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2
+    \end{tabular*}\vspace{-7pt}
+}
+
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
@@ -87,8 +94,8 @@
       {Deep Learning Specialization}{coursera.org, deeplearning.ai}
       {5 course Specialization, Overall Grade Achieved: 99.5\%}{October. 2017 -- March. 2018}
     \resumeSubheading
-      {Data Analyst and Data Scientist Paths}{dataquest.io}
-      {Practicing on Data Science projects and technologies}{July. 2017 -- April. 2018}
+      {Data Scientist and Data Analyst Paths}{dataquest.io}
+      {Practicing with Data Science projects and technologies}{July. 2017 -- April. 2018}
     \resumeSubheading
       {Belarusian State Medical University}{Minsk, Belarus}
       {General Medicine. Yet, my lifepath led me to IT}{Sept. 2005 -- May. 2010}
@@ -99,62 +106,67 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Epam Systems}{Minsk, Belarus}
-      {System Analyst and Performance Tester}{Aug 2015 - Aug 2016}
+      {System Analyst and Performance Testing}{Aug 2015 - Aug 2016}
       \resumeItemListStart
         \resumeItem{Projects}
           {Streaming platform: online TV, e-commerce - delhaize group}
         \resumeItem{What was I doing?}
-          {Essentially the aim was to perform initial analysis of the system, build non-functional "heavy load tests", kick them off, answer the question "how capable the system is", revealing the "bottlenecks", resolve those in cooperation with devs.}
+          {Essentially the aim was to do an initial analysis, build non-functional "heavy load tests", kick them off, answer the question "how capable the system is", revealing and resolving the "bottlenecks".}
       \resumeItemListEnd
     \resumeSubheading
       {Allied Testing}{Minsk, Belarus; London, UK}
       {Performance Tester}{Jul 2011 - Oct 2014}
       \resumeItemListStart
         \resumeItem{Projects}
-          {London Stock Exchange, Deutsche Bank }
+          {London Stock Exchange, Deutsche Bank dbPalace}
         \resumeItem{Testing}
-          {Design, build, run load tests, collect and present stats. Essentially answering a question "What is the capacity the system?"
-}
+          {Design, build, run load tests, collect and present stats. Answering questions "What is the capacity of the system?", "What are the bottlenecks?"}
         \resumeItem{Workflow}
           {Cooperation with various teams: developers, business analysts, QAs located across different countries.}
         \resumeItem{Impact}
-          {System performance I worked with and its' capacity have improved significantly. Subsequently it was all about cost improvement in operations, maintenance, developement for those systems.}
+          {Performance of the systems I worked with have improved significantly. Which affected the cost in operations, maintenance and developement in a positive way.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
-%-----------PROJECTS-----------------
+
+  %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{Mercari Price Suggestion Challenge ($100,000 prize Kaggle style data science competition}{Dec 2017 - Jan 2018}
-      {Currently top 6\% out of 2.4k participant teams. First place has mrse ~38\%, mine ~42\% on price prediction. https://www.kaggle.com/c/mercari-price-suggestion-challenge}
-    \resumeSubItem{US Traffic Fatality Rates}{Feb 2017}
+    \resumeSubItem{Mercari Price Suggestion Challenge}
+      {\$100,000 prize Kaggle style data science competition. Currently top 6\% out of 2.4k participant teams. First place has mrse ~38\%, mine ~42\% on price prediction. https://www.kaggle.com/c/mercari-price-suggestion-challenge}
+    \resumeSubItem{US Traffic Fatality Rates}
       {Deep Exploration on US Traffic data using BigSql, Machine Learning techniques and presenting most interesting findings in nice visuals via plotly, matplotlib. https://www.kaggle.com/silversurf/us-traffic-getting-to-the-bottom-of-it}
     \resumeSubItem{Text Mining - Hacker News}
-      {Topic popularity exploration on Hacker News website since 2007. The results are presented as nice interactive highcharts graph https://quicksilver0.github.io/project/2017/11/29/headlines_popularity.html}
+      {Topic popularity exploration on Hacker News website since 2007. The results are presented as nice interactive highcharts graph https://goo.gl/kk6E3E}
+    \resumeSubItem{NYC best Schools District}
+      {Here I explore NewYork accomodation prices as well as school ranks, presenting the findings as a cool matplotlib map projection (cool, because it is surprising of what matplotlib actually capable of): https://goo.gl/TsTe8C}
   \resumeSubHeadingListEnd
 
-%
-%--------PROGRAMMING SKILLS------------
-%\section{Programming Skills}
-%  \resumeSubHeadingListStart
-%  \resumeSubItem{Technical}
-%    \item{
-%      \textbf{Machine Learning:}{Classification, Regression, Data Preprocessing, Visualization, Feature Engineering, Data Scraping}
-%      \hfill
-%      \textbf{Deep Learning:}{NLP (FastText, RNN, CNN, LSTMs; GloVe; Attention Mechanism), Image Recognition (CNN), Voice Recognition}
-%      \hfill
-%      \textbf{Explorative Data AnalysisDA}
-%      \hfill
-%      \textbf{Others}{MySQL, Postgres, BigSQL, git}
-%  \resumeSubItem{Coding}
-%    \item{
-%      \textbf{Data Science:}{Python(Pandas, Numpy, Matplotlib, Seaborn, plotly, scikit-learn, SciPy, Keras, Theano), SQL}
-%      \hfill
-%      \textbf{Others:}{HTML, CSS, LaTeX, regexps}
-%      \hfill
-%    }
-%  \resumeSubHeadingListEnd
 
-
+% %--------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+  \skillsSubheading
+    {Programming}{languages, tools}
+    \resumeItemListStart
+      \resumeItem{DataScience}
+        {\textbf{Python} (Pandas, Numpy, Matplotlib, Seaborn, plotly, scikit, SciPy, Keras, TensorFlow), SQL}
+      \resumeItem{Others}
+        {HTML, CSS, LaTeX, regexps}
+    \resumeItemListEnd
+  \skillsSubheading
+    {Technical}{techniques}
+    \resumeItemListStart
+      \resumeItem{Deep Learning}
+        {NLP (FastText, RNN, CNN, LSTMs; GloVe; Attention Mechanism), Image Recognition (CNN), Voice Recognition}
+      \resumeItem{Machine Learning}
+        {Classification, Regression, Visualization, Feature Engineering}
+      \resumeItem{EDA}
+        {Explorative Data Analysis, Map projections}
+      \resumeItem{Others}
+        {MySQL, Postgres, BigSQL, git, Data Scraping and Preprocessing}
+    \resumeItemListEnd
+ \resumeSubHeadingListEnd
 %-------------------------------------------
+
 \end{document}
